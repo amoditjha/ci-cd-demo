@@ -1,2 +1,2 @@
 # ci-cd-demo
-this  repository used to proctice CI/CD using GitHub actions
+This  repository used to proctice CI/CD using GitHub actions
