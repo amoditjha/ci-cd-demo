@@ -7,28 +7,28 @@ on:
     branches:
       - main  
   workflow_dispatch:
-jobs:
-hello:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+jobs: 
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+      - uses: actions/checkout@v2
 
-    - name: Run hello world script
-      run: |
-        echo "Hello, world!"
-        echo "This is a GitHub Actions workflow."
-        echo "It runs on push and pull request events."   
-      shell: bash
-goodbye:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Run hello world script
+        run: |
+          echo "Hello, world!"
+          echo "This is a GitHub Actions workflow."
+          echo "It runs on push and pull request events."   
+        shell: bash
+  goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+      - uses: actions/checkout@v2
 
-    - name: Run goodbye world script
-      run: |
-        echo "Goodbye, world!"
-        echo "This is a GitHub Actions workflow."
-        echo "It runs on push and pull request events."   
-      shell: bash
+      - name: Run goodbye world script
+        run: |
+          echo "Goodbye, world!"
+          echo "This is a GitHub Actions workflow."
+          echo "It runs on push and pull request events."   
+        shell: bash
