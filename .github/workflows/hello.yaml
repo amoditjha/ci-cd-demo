@@ -12,17 +12,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-      - uses: actions/checkout@v2
-
+        uses: actions/checkout@v2
       - name: Run hello world script
         run: echo "Hello, world!"
         shell: bash
+
   goodbye:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-      - uses: actions/checkout@v2
-
+        uses: actions/checkout@v2
       - name: Run goodbye world script
         run: echo "Goodbye, world!" 
         shell: bash
